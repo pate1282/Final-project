@@ -1,0 +1,98 @@
+/* Beige, Gold Color Variables */
+:root {
+    --color-light-beige: #ffe6ac;
+    --color-gold: #c68d00;
+/* Bootstrap Primary, Secondary Color Variables */
+    --bs-primary-rgb: 198, 141, 0;
+    --bs-secondary-rgb: 255, 230, 172;
+}
+
+.nav-link, 
+/* Navbar link styling */
+/* Color change to gold using the assigned variables */
+.navbar-nav .nav-link.active {
+    color: var(--color-gold);
+}
+
+.nav-link:hover, 
+/* Hover styling for active nav-link, setting text and background color */
+.navbar-nav .nav-link.active:hover {
+    background-color: var(--color-gold);
+    color: black;
+}
+
+/* Setting width, height and resizing the object to cover its container */
+img, object {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Main banner with background image */
+.banner {
+    background-color: var(--color-light-beige);
+    background-image: url('../img/main-banner.jpg');
+}
+
+/* Dark transparent background */
+.banner .container {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.about-us {
+    background: var(--color-light-beige);
+}
+
+.vision {
+    background-image: url('../img/vision.jpg');
+}
+
+/* Button with outline gold */
+.btn-outline-success {
+    --bs-btn-color: var(--color-gold);
+    --bs-btn-border-color: var(--color-gold);
+    --bs-btn-hover-bg: var(--color-gold);
+    --bs-btn-hover-border-color: var(--color-gold);
+}
+
+.logo {
+    max-width: 4rem;
+}
+
+/* Primary button style */
+.btn-primary {
+    border-radius: 0;
+    background: var(--color-gold);
+    border: 1px solid var(--color-gold);
+    color: black;
+}
+
+/* Setting hover effects */
+.btn-primary:hover {
+    background: black;
+    color: var(--color-gold);
+    border: 1px solid black;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    border-radius: 0;
+
+}
+
+
+.team hr {
+    opacity: 1;
+}
+
+/* 768 px = 48 em */
+@media screen and (min-width: 48em) {
+
+}
+
+.container-fluid {
+    color: #c68d00;
+}
